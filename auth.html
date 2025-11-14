@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <!--
-    auth.html - Trang Đăng ký / Đăng nhập
-    - Form chỉ là frontend mẫu. Để hoạt động thực tế, cần backend (ví dụ Node/PHP) xử lý form.
-    - Có 2 box: registerBox và loginBox; JS sẽ chuyển đổi giữa chúng.
-  -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Genus Gaming - Đăng ký / Đăng nhập</title>
@@ -29,7 +24,7 @@
       <h2 id="registerTitle">Đăng ký</h2>
       <p class="muted">Tạo tài khoản để nhận thông báo ưu đãi và quản lý lịch sử.</p>
       <form id="registerForm" autocomplete="on" novalidate>
-        <!-- Chú thích: tất cả input đều có 'name' để dễ liên kết backend sau này -->
+        
         <label for="reg_name">Họ và tên</label>
         <input id="reg_name" name="name" type="text" placeholder="Nguyễn Văn A" required>
 
@@ -46,7 +41,6 @@
       </form>
 
       <p class="muted">Đã có tài khoản? <a href="#" id="toLogin">Đăng nhập</a></p>
-      <!-- Ghi chú: JS sẽ ngăn submit mặc định và hiển thị thông báo (mẫu) -->
     </section>
 
     <!-- LOGIN BOX -->
